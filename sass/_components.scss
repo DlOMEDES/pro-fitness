@@ -1,24 +1,43 @@
+// top notification bar
 .notifyBar {
-  background: $color-black;
+  position: relative;
+  background: $black;
   height: 4rem;
   width: 100%;
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
+  color: $brand-lightGold;
+  font-weight: 700;
   &-content {
-    color: $color-white;
     width: 100%;
   }
 
   &-text {
-    font-weight: 700;
     text-transform: uppercase;
     font-size: 1.4rem;
   }
 
   &-close {
-    padding: 0.5rem 1rem;
-    color: #fff;
+    position: absolute;
+    top: 0px;
+    right: 0;
+    padding: 0.5rem 2rem;
+    font-size: 1.6rem;
+  }
+}
+
+.btn {
+  border-radius: 5rem;
+  padding: 1rem 2rem;
+  margin: 0 1.5rem;
+  &-primary {
+    background: $brand-lightGold;
+    color: $brand-lightRed;
+  }
+  &-secondary {
+    background: $brand-lightRed;
+    color: $brand-lightGold;
   }
 }
