@@ -1,4 +1,13 @@
-@import 'theme';
-@import 'layout';
-@import 'components';
-@import 'base';
+@import "theme/variables";
+
+@import "base/base";
+@import "base/typography";
+@import "base/animations";
+@import "base/utilities";
+
+@import "components/notificationBar";
+@import "components/buttons";
+@import "components/bgVideo";
+
+@import "layout/header";
+@import "layout/hero";
