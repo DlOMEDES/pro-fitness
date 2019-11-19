@@ -5,10 +5,12 @@
 @import "base/animations";
 @import "base/utilities";
 
-@import "components/notificationBar";
 @import "components/buttons";
 @import "components/bgVideo";
+@import "components/notificationBar";
+@import "components/quotes";
 
 @import "layout/header";
 @import "layout/hero";
 @import "layout/membership";
+@import "layout/staff";

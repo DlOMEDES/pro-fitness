@@ -1,0 +1,36 @@
+.sectionStaff {
+  padding: 10rem 0;
+}
+
+.staff-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.staffIntro {
+  margin-right: 100px;
+  text-transform: uppercase;
+  border-bottom: 0.2rem solid gold;
+}
+
+.staffImg {
+  &-images {
+    width: 35rem;
+    height: 35rem;
+    object-fit: cover;
+  }
+  &-one {
+  }
+}
+
+.navDot {
+  margin: 1rem auto;
+  &-dots {
+    height: 1.5rem;
+    width: 1.5rem;
+    background-color: $black;
+    border-radius: 50%;
+    display: inline-block;
+  }
+}

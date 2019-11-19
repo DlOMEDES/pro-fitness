@@ -27,15 +27,13 @@ li {
 a {
   text-decoration: none; }
 
-.membersTitle {
-  margin: 1rem 0; }
-
-.membersHeading {
-  text-align: center;
-  margin: 5rem auto;
-  width: 25%;
-  text-transform: uppercase;
-  border-bottom: 0.2rem solid gold; }
+.btn {
+  border-radius: 5rem;
+  padding: 1rem 2rem;
+  color: #000000; }
+  .btn-primary {
+    background: #000000;
+    color: #ffd700; }
 
 .notifyBar {
   position: relative;
@@ -60,13 +58,13 @@ a {
     padding: 0.5rem 2rem;
     font-size: 1.6rem; }
 
-.btn {
-  border-radius: 5rem;
-  padding: 1rem 2rem;
-  color: #000000; }
-  .btn-primary {
-    background: #000000;
-    color: #ffd700; }
+.mainQuote {
+  background: rgba(179, 179, 179, 0.2);
+  text-align: center;
+  padding: 5rem;
+  width: 100%; }
+  .mainQuote q {
+    width: 50%; }
 
 header {
   font-weight: 700;
@@ -121,7 +119,44 @@ header {
 .sectionMembership {
   padding: 10rem 20rem; }
 
+.membersHeading {
+  text-align: center;
+  margin: 5rem auto;
+  width: 25%;
+  text-transform: uppercase;
+  border-bottom: 0.2rem solid gold; }
+
 .membersGrid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 5rem; }
+  .membersGrid-title {
+    padding: 1rem 0;
+    text-transform: uppercase; }
+
+.sectionStaff {
+  padding: 10rem 0; }
+
+.staff-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center; }
+
+.staffIntro {
+  margin-right: 100px;
+  text-transform: uppercase;
+  border-bottom: 0.2rem solid gold; }
+
+.staffImg-images {
+  width: 35rem;
+  height: 35rem;
+  object-fit: cover; }
+
+.navDot {
+  margin: 1rem auto; }
+  .navDot-dots {
+    height: 1.5rem;
+    width: 1.5rem;
+    background-color: #000000;
+    border-radius: 50%;
+    display: inline-block; }
