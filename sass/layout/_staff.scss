@@ -1,36 +1,18 @@
 .sectionStaff {
   padding: 10rem 0;
+  background: $black;
+  color: $white;
 }
 
-.staff-container {
+.staffContainer {
   display: flex;
-  justify-content: flex-end;
+  // justify-content: flex-end;
   align-items: center;
+  margin: 5rem 0;
 }
-
 .staffIntro {
-  margin-right: 100px;
+  margin: 0 5rem 0 20rem;
   text-transform: uppercase;
   border-bottom: 0.2rem solid gold;
-}
-
-.staffImg {
-  &-images {
-    width: 35rem;
-    height: 35rem;
-    object-fit: cover;
-  }
-  &-one {
-  }
-}
-
-.navDot {
-  margin: 1rem auto;
-  &-dots {
-    height: 1.5rem;
-    width: 1.5rem;
-    background-color: $black;
-    border-radius: 50%;
-    display: inline-block;
-  }
+  padding-bottom: 1rem;
 }

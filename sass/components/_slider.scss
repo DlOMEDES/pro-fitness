@@ -1,0 +1,86 @@
+.sliderWrapper,
+#slider {
+  overflow: hidden;
+  height: 70vh;
+  width: 70%;
+}
+
+.slide-content {
+  overflow: hidden;
+  height: 70vh;
+}
+
+.sliderWrapper {
+  position: relative;
+}
+
+#slider {
+  margin: 0 auto;
+}
+
+.slide {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  &-1 {
+    background-image: url(../../dist/images/Athena.jpg);
+  }
+  &-2 {
+    background-image: url(../../dist/images/Leo.jpg);
+  }
+  &-3 {
+    background-image: url(../../dist/images/Ellie.jpg);
+  }
+  &-4 {
+    background-image: url(../../dist/images/Kai.jpg);
+  }
+  &-5 {
+    background-image: url(../../dist/images/Emery.jpg);
+  }
+  &-6 {
+    background-image: url(../../dist/images/Kolton.jpg);
+  }
+  &-7 {
+    background-image: url(../../dist/images/Leah.jpg);
+  }
+  &-8 {
+    background-image: url(../../dist/images/Ivan.jpg);
+  }
+
+  &-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+
+    span {
+      color: white;
+      font-size: 2.4rem;
+    }
+  }
+}
+.arrow {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  margin-top: -1.5rem;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+#arrowLeft {
+  border-width: 1.5rem 2.5rem 1.5rem 0;
+  left: 0;
+  margin-left: 10rem;
+  border-color: transparent #fff transparent transparent;
+}
+
+#arrowRight {
+  border-width: 1.5rem 0 1.5rem 2.5rem;
+  right: 0;
+  margin-right: 10rem;
+  border-color: transparent transparent transparent #fff;
+}
