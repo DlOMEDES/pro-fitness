@@ -4,12 +4,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sass": "node-sass -w sass/main.scss dist/css/style.css --recursive"
+    "sass": "node-sass -w sass/main.scss dist/css/style.css --recursive",
+    "dev": "parcel src/index.html"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "node-sass": "^4.13.0"
+    "node-sass": "^4.13.0",
+    "parcel-bundler": "^1.12.4"
+  },
+  "devDependencies": {
+    "sass": "^1.23.7"
   }
 }
