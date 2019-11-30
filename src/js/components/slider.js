@@ -5,6 +5,7 @@ const slides = document.querySelectorAll(".slide"),
   arrowRight = document.querySelector("#arrowRight");
 // target current slide
 currentSlide = 0;
+
 // prep and clear all images
 resetImgs = () => {
   for (let i = 0; i < slides.length; i++) {
@@ -24,6 +25,12 @@ arrowLeft.addEventListener("click", () => {
   }
   prevImg();
 });
+// show previous image
+prevImg = () => {
+  resetImgs();
+  slides[currentSlide - 1].style.display = "block";
+  currentSlide--;
+};
 
 // when right arrow is clicked
 arrowRight.addEventListener("click", () => {
@@ -32,12 +39,6 @@ arrowRight.addEventListener("click", () => {
   }
   nextImg();
 });
-// show previous image
-prevImg = () => {
-  resetImgs();
-  slides[currentSlide - 1].style.display = "block";
-  currentSlide--;
-};
 // show next
 nextImg = () => {
   resetImgs();

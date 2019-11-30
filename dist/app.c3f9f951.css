@@ -32,6 +32,14 @@ a {
   text-decoration: none;
 }
 
+h1 {
+  font-size: 3.6rem;
+}
+
+h2 {
+  font-size: 2.4rem;
+}
+
 .btn {
   border-radius: 5rem;
   padding: 1rem 2rem;
@@ -103,6 +111,7 @@ a {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  transition: transform 0.3s ease-in-out;
 }
 .slide-1 {
   background-image: url(/Athena.3d787545.jpg);
@@ -180,6 +189,25 @@ a {
   background-color: #ffd700;
 }
 
+.box {
+  border-radius: 0.5rem;
+  margin-right: 5rem;
+  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.1);
+  padding: 5rem;
+  width: 375px;
+  background: #ffffff;
+}
+.box-head {
+  text-align: center;
+  margin: 2rem 0;
+}
+.box-head img {
+  width: 10rem;
+}
+.sections {
+  padding: 20rem 20rem 25rem 20rem;
+}
+
 header {
   font-weight: 700;
   text-transform: uppercase;
@@ -241,11 +269,7 @@ header .navMenu-logo img {
   font-weight: 800;
 }
 
-.sectionMembership {
-  padding: 10rem 20rem 25rem 20rem;
-}
-
-.membersHeading {
+.sectionMembers-head {
   text-align: center;
   margin: 5rem auto;
   width: 25%;
@@ -279,6 +303,35 @@ header .navMenu-logo img {
   text-transform: uppercase;
   border-bottom: 0.2rem solid gold;
   padding-bottom: 1rem;
+}
+
+.sectionTips {
+  background: #d8d8d8;
+}
+.sectionTips-head {
+  text-align: center;
+  margin: 5rem auto 1rem auto;
+  width: 25%;
+  text-transform: uppercase;
+  border-bottom: 0.2rem solid #ffd700;
+}
+.sectionTips-copy {
+  text-align: center;
+}
+
+.tipBoxes {
+  display: flex;
+  margin-top: 10rem;
+  justify-content: center;
+}
+.tipBoxes-3 {
+  margin-right: 0;
+}
+
+#map {
+  width: 70%;
+  height: 50rem;
+  margin: 5rem auto;
 }
 
 /*# sourceMappingURL=/app.c3f9f951.css.map */

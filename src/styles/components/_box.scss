@@ -1,0 +1,18 @@
+.box {
+  border-radius: 0.5rem;
+  margin-right: 5rem;
+  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.1);
+  padding: 5rem;
+  width: 375px;
+  background: $white;
+  &-head {
+    text-align: center;
+    margin: 2rem 0;
+    img {
+      width: 10rem;
+    }
+  }
+
+  &-details {
+  }
+}

@@ -189,7 +189,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"C:\\Users\\Pro\\dev\\static\\spartan-fitness\\src\\images\\Athena.jpg":[["Athena.3d787545.jpg","images/Athena.jpg"],"images/Athena.jpg"],"C:\\Users\\Pro\\dev\\static\\spartan-fitness\\src\\images\\Leo.jpg":[["Leo.af97a938.jpg","images/Leo.jpg"],"images/Leo.jpg"],"C:\\Users\\Pro\\dev\\static\\spartan-fitness\\src\\images\\Ellie.jpg":[["Ellie.2a9f719f.jpg","images/Ellie.jpg"],"images/Ellie.jpg"],"C:\\Users\\Pro\\dev\\static\\spartan-fitness\\src\\images\\Kai.jpg":[["Kai.e187ab85.jpg","images/Kai.jpg"],"images/Kai.jpg"],"C:\\Users\\Pro\\dev\\static\\spartan-fitness\\src\\images\\Emery.jpg":[["Emery.42ae0118.jpg","images/Emery.jpg"],"images/Emery.jpg"],"C:\\Users\\Pro\\dev\\static\\spartan-fitness\\src\\images\\Kolton.jpg":[["Kolton.25476f34.jpg","images/Kolton.jpg"],"images/Kolton.jpg"],"C:\\Users\\Pro\\dev\\static\\spartan-fitness\\src\\images\\Leah.jpg":[["Leah.39bb420e.jpg","images/Leah.jpg"],"images/Leah.jpg"],"C:\\Users\\Pro\\dev\\static\\spartan-fitness\\src\\images\\Ivan.jpg":[["Ivan.a60debde.jpg","images/Ivan.jpg"],"images/Ivan.jpg"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"js/slider.js":[function(require,module,exports) {
+},{"C:\\Users\\Pro\\dev\\static\\spartan-fitness\\src\\images\\Athena.jpg":[["Athena.3d787545.jpg","images/Athena.jpg"],"images/Athena.jpg"],"C:\\Users\\Pro\\dev\\static\\spartan-fitness\\src\\images\\Leo.jpg":[["Leo.af97a938.jpg","images/Leo.jpg"],"images/Leo.jpg"],"C:\\Users\\Pro\\dev\\static\\spartan-fitness\\src\\images\\Ellie.jpg":[["Ellie.2a9f719f.jpg","images/Ellie.jpg"],"images/Ellie.jpg"],"C:\\Users\\Pro\\dev\\static\\spartan-fitness\\src\\images\\Kai.jpg":[["Kai.e187ab85.jpg","images/Kai.jpg"],"images/Kai.jpg"],"C:\\Users\\Pro\\dev\\static\\spartan-fitness\\src\\images\\Emery.jpg":[["Emery.42ae0118.jpg","images/Emery.jpg"],"images/Emery.jpg"],"C:\\Users\\Pro\\dev\\static\\spartan-fitness\\src\\images\\Kolton.jpg":[["Kolton.25476f34.jpg","images/Kolton.jpg"],"images/Kolton.jpg"],"C:\\Users\\Pro\\dev\\static\\spartan-fitness\\src\\images\\Leah.jpg":[["Leah.39bb420e.jpg","images/Leah.jpg"],"images/Leah.jpg"],"C:\\Users\\Pro\\dev\\static\\spartan-fitness\\src\\images\\Ivan.jpg":[["Ivan.a60debde.jpg","images/Ivan.jpg"],"images/Ivan.jpg"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"js/components/slider.js":[function(require,module,exports) {
 // querySectorAll return a html collection like an array with index
 var slides = document.querySelectorAll(".slide"),
     // target the arrows
@@ -217,7 +217,14 @@ arrowLeft.addEventListener("click", function () {
   }
 
   prevImg();
-}); // when right arrow is clicked
+}); // show previous image
+
+prevImg = function prevImg() {
+  resetImgs();
+  slides[currentSlide - 1].style.display = "block";
+  currentSlide--;
+}; // when right arrow is clicked
+
 
 arrowRight.addEventListener("click", function () {
   if (currentSlide === slides.length - 1) {
@@ -225,14 +232,7 @@ arrowRight.addEventListener("click", function () {
   }
 
   nextImg();
-}); // show previous image
-
-prevImg = function prevImg() {
-  resetImgs();
-  slides[currentSlide - 1].style.display = "block";
-  currentSlide--;
-}; // show next
-
+}); // show next
 
 nextImg = function nextImg() {
   resetImgs();
@@ -247,10 +247,8 @@ initSlide();
 
 require("../styles/styles.scss");
 
-require("./slider");
-
-console.log("live with parcel");
-},{"../styles/styles.scss":"styles/styles.scss","./slider":"js/slider.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+require("./components/slider");
+},{"../styles/styles.scss":"styles/styles.scss","./components/slider":"js/components/slider.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -278,7 +276,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50433" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "62554" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

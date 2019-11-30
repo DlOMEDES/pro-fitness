@@ -1,13 +1,11 @@
-.sectionMembership {
-  padding: 10rem 20rem 25rem 20rem;
-}
-
-.membersHeading {
-  text-align: center;
-  margin: 5rem auto;
-  width: 25%;
-  text-transform: uppercase;
-  border-bottom: 0.2rem solid gold;
+.sectionMembers {
+  &-head {
+    text-align: center;
+    margin: 5rem auto;
+    width: 25%;
+    text-transform: uppercase;
+    border-bottom: 0.2rem solid gold;
+  }
 }
 
 .membersGrid {

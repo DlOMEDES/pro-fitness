@@ -1,0 +1,27 @@
+.sectionTips {
+  background: $brand-lightSilver;
+  &-head {
+    text-align: center;
+    margin: 5rem auto 1rem auto;
+    width: 25%;
+    text-transform: uppercase;
+    border-bottom: 0.2rem solid #ffd700;
+  }
+
+  &-copy {
+    text-align: center;
+  }
+}
+
+.tipBoxes {
+  display: flex;
+  margin-top: 10rem;
+  justify-content: center;
+  &-1 {
+  }
+  &-2 {
+  }
+  &-3 {
+    margin-right: 0;
+  }
+}

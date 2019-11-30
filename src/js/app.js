@@ -1,4 +1,4 @@
 import "../styles/styles.scss";
-import "./slider";
+import "./components/slider";
 
-console.log("live with parcel");
+// console.log("live with parcel");
