@@ -385,10 +385,31 @@ header .navMenu-logo img {
   object-fit: cover;
 }
 
-#map {
-  width: 70%;
-  height: 50rem;
-  margin: 5rem auto;
+.locationDetails h3 {
+  margin-top: 2rem;
+}
+
+.footer {
+  background-color: #000000;
+  height: 7rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer p {
+  color: #ffffff;
+  font-size: 1.4rem;
+}
+.footer-social {
+  margin-left: 13rem;
+}
+.footer-social a {
+  margin-right: 1rem;
+  color: #ffd700;
+}
+.footer-social a:last-child {
+  margin-right: 0;
 }
 
 /*# sourceMappingURL=/app.c3f9f951.css.map */
