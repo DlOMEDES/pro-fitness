@@ -8,6 +8,7 @@
 .slide-content {
   overflow: hidden;
   height: 70vh;
+  position: relative;
 }
 
 .sliderWrapper {
@@ -54,11 +55,6 @@
     justify-content: center;
     text-align: center;
     align-items: center;
-
-    span {
-      color: white;
-      font-size: 2.4rem;
-    }
   }
 }
 .arrow {

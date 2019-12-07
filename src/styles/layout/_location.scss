@@ -1,4 +1,11 @@
-.locationDetails {
+.location {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $white;
+}
+
+.locationInfo {
   h3 {
     margin-top: 2rem;
   }

@@ -26,21 +26,31 @@
       <span class="notifyBar-close">x</span>
     </a>
     <!-- main header with navigation -->
-    <header>
+    <header class="mainHeader">
+      <!-- mobile menu -->
+      <div class="menuBtn">
+        <div class="menuBtn-line"></div>
+        <div class="menuBtn-line"></div>
+        <div class="menuBtn-line"></div>
+      </div>
+
+      <!-- main navigation -->
       <nav class="nav">
-        <ul class="navMenu">
-          <li><a href="/" class="navMenu-link">Home</a></li>
-          <li><a href="/" class="navMenu-link">Membership</a></li>
-          <li><a href="/" class="navMenu-link">Trainers</a></li>
-          <li></li>
-        </ul>
+        <div class="navMenu">
+          <a href="/" class="navMenu-link">Home</a>
+          <a href="/" class="navMenu-link">Membership</a>
+          <a href="/" class="navMenu-link">Trainers</a>
+        </div>
+
         <!-- nav logo -->
-        <a href="/" class="navMenu-logo">
-          <img src="./images/spartan-fitness-logo.png" alt="" />
-        </a>
+        <div class="navLogo">
+          <a href="#">
+            <img src="./images/spartan-fitness-logo.png" alt="" />
+          </a>
+        </div>
         <!-- nav cta -->
-        <div class="navMenu-buttons">
-          <a href="/" class="btn">pricing</a>
+        <div class="navMenu">
+          <a href="/" class="navMenu-link">pricing</a>
           <a href="/" class="navMenu-link">Location</a>
           <a href="/" class="btn btn-primary">free pass</a>
         </div>
@@ -49,9 +59,11 @@
     <!-- hero banner -->
     <div class="hero">
       <div class="heroContent">
-        <h1 class="heroContent-heading">
-          The Price of Excellence is discipline.
-        </h1>
+        <div class="heroContent-head">
+          <h1 class="heroContent-heading">
+            The Price of Excellence is discipline.
+          </h1>
+        </div>
       </div>
       <!-- hero video -->
       <div class="bgVideo">
@@ -73,13 +85,13 @@
         <cite>Arnold Schwarzenegger</cite>
       </div>
       <!-- membership section -->
-      <section class="sectionMembers sections">
-        <div class="sectionMembers-head">
-          <h1>what we offer</h1>
+      <section class="members sections">
+        <div class="membersHead">
+          <h1 class="membersHeading">what we offer</h1>
         </div>
         <div class="membersGrid">
           <div class="membersGrid-training">
-            <h2 class="membersGrid-title">1-On-1 Personal Training</h2>
+            <h3 class="membersGrid-title">1-On-1 Personal Training</h3>
             <p class="membersGrid-text" class="membersGrid-text">
               All sessions are 1 hour and personalized to your individual needs
               and interests. We offer coaching in powerlifting, strongman,
@@ -127,10 +139,10 @@
         </div>
       </section>
       <!-- staff / trainers carousel section -->
-      <section class="sectionStaff">
+      <section class="staff sections">
         <div class="staffContainer">
           <div class="staffIntro">
-            <h1>
+            <h1 class="staffHeading">
               Meet our staff <br />
               and trainers
             </h1>
@@ -140,49 +152,49 @@
             <div class="slider" id="slider">
               <div class="slide slide-1">
                 <div class="slide-content">
-                  <span>Image one</span>
+                  <span class="slide-text">a</span>
                 </div>
               </div>
 
               <div class="slide slide-2">
                 <div class="slide-content">
-                  <span>Image two</span>
+                  <span class="slide-text">strong</span>
                 </div>
               </div>
 
               <div class="slide slide-3">
                 <div class="slide-content">
-                  <span>Image 3</span>
+                  <span class="slide-text">spirit</span>
                 </div>
               </div>
 
               <div class="slide slide-4">
                 <div class="slide-content">
-                  <span>Image 4</span>
+                  <span class="slide-text">needs</span>
                 </div>
               </div>
 
               <div class="slide slide-5">
                 <div class="slide-content">
-                  <span>Image 5</span>
+                  <span class="slide-text"><p>a</p></span>
                 </div>
               </div>
 
               <div class="slide slide-6">
                 <div class="slide-content">
-                  <span>Image 6</span>
+                  <span class="slide-text"><p>strong</p></span>
                 </div>
               </div>
 
               <div class="slide slide-7">
                 <div class="slide-content">
-                  <span>Image 7</span>
+                  <span class="slide-text"><p>powerful</p></span>
                 </div>
               </div>
 
               <div class="slide slide-8">
                 <div class="slide-content">
-                  <span>Image 8</span>
+                  <span class="slide-text"><p>body</p></span>
                 </div>
               </div>
             </div>
@@ -205,11 +217,11 @@
       </section>
 
       <!-- first timers tips section -->
-      <section class="sectionTips sections">
-        <div class="sectionTips-head">
-          <h1>First-Timer Tips</h1>
+      <section class="tips sections">
+        <div class="tips-head">
+          <h1 class="tips-heading">First-Timer Tips</h1>
         </div>
-        <div class="sectionTips-copy">
+        <div class="tips-text">
           <p>Get ready to sweat, have fun and crush your fitness goals.</p>
         </div>
         <div class="tipBoxes">
@@ -217,10 +229,10 @@
           <div class="tipBoxes-1 box">
             <div class="box-head">
               <img src="./images/handshakeHeart.png" alt="" />
-              <h2>We’ve Got Your Back</h2>
+              <h2 class="box-heading">We’ve Got Your Back</h2>
             </div>
             <div class="box-details">
-              <p>
+              <p class="box-text">
                 Don’t worry if the movements are new to you! Our trainers are
                 credentialed and caring. They will teach you to move safely and
                 challenge you to get the most of out your workout. They provide
@@ -233,10 +245,10 @@
           <div class="tipBoxes-2 box">
             <div class="box-head">
               <img src="./images/shoes.png" alt="" />
-              <h2>Come Prepared</h2>
+              <h2 class="box-heading">Come Prepared</h2>
             </div>
             <div class="box-details">
-              <p>
+              <p class="box-text">
                 Our combination of cardio machines, weights, and bodyweight
                 training, so be sure to wear sneakers and comfortable athletic
                 clothes. Don’t forget to hydrate! We have filling stations and
@@ -248,10 +260,10 @@
           <div class="tipBoxes-3 box">
             <div class="box-head">
               <img src="./images/muscle.png" alt="" />
-              <h2>Get Ready to Have Fun</h2>
+              <h2 class="box-heading">Get Ready to Have Fun</h2>
             </div>
             <div class="box-details">
-              <p>
+              <p class="box-text">
                 Be sure to come with an open mind and a positive attitude. Get
                 ready to be challenged and have some fun along the way!
               </p>
@@ -260,148 +272,155 @@
         </div>
       </section>
 
-      <!-- image grid with a contact form -->
-      <section class="sectionGallery sections">
-        <div class="gallery">
-          <!-- <figure class="galleryItem galleryItem-1">
-            <img
-              class="galleryItem-img"
-              src="./images/view01.jpg"
-              alt="gallery image 1"
-            />
-          </figure> -->
-          <figure class="galleryItem galleryItem-1">
+      <!-- image grid with location information -->
+      <section class="location sections">
+        <div class="galleryGrid">
+          <figure class="galleryFig galleryFig-1">
             <img
               src="./images/view-1.jpg"
               alt="gallery image 1"
-              class="galleryItem-img"
+              class="galleryFig-img"
             />
           </figure>
-          <figure class="galleryItem galleryItem-2">
+          <figure class="galleryFig galleryFig-2">
             <img
               src="./images/view-2.jpg"
               alt="gallery image 2"
-              class="galleryItem-img"
+              class="galleryFig-img"
             />
           </figure>
-          <figure class="galleryItem galleryItem-3">
+          <figure class="galleryFig galleryFig-3">
             <img
               src="./images/view-3.jpg"
               alt="gallery image 3"
-              class="galleryItem-img"
+              class="galleryFig-img"
             />
           </figure>
-          <figure class="galleryItem galleryItem-4">
+          <figure class="galleryFig galleryFig-4">
             <img
               src="./images/view-4.jpg"
               alt="gallery image 4"
-              class="galleryItem-img"
+              class="galleryFig-img"
             />
           </figure>
-          <figure class="galleryItem galleryItem-5">
+          <figure class="galleryFig galleryFig-5">
             <img
               src="./images/view-5.jpg"
               alt="gallery image 5"
-              class="galleryItem-img"
+              class="galleryFig-img"
             />
           </figure>
-          <figure class="galleryItem galleryItem-6">
+          <figure class="galleryFig galleryFig-6">
             <img
               src="./images/view-6.jpg"
               alt="gallery image 6"
-              class="galleryItem-img"
+              class="galleryFig-img"
             />
           </figure>
-          <figure class="galleryItem galleryItem-7">
+          <figure class="galleryFig galleryFig-7">
             <img
               src="./images/view-7.jpg"
               alt="gallery image 7"
-              class="galleryItem-img"
+              class="galleryFig-img"
             />
           </figure>
-          <figure class="galleryItem galleryItem-8">
+          <figure class="galleryFig galleryFig-8">
             <img
               src="./images/view-8.jpg"
               alt="gallery image 8"
-              class="galleryItem-img"
+              class="galleryFig-img"
             />
           </figure>
-          <figure class="galleryItem galleryItem-9">
+          <figure class="galleryFig galleryFig-9">
             <img
               src="./images/view-9.jpg"
               alt="gallery image 9"
-              class="galleryItem-img"
+              class="galleryFig-img"
             />
           </figure>
-          <figure class="galleryItem galleryItem-10">
+          <figure class="galleryFig galleryFig-10">
             <img
               src="./images/view-10.jpg"
               alt="gallery image 10"
-              class="galleryItem-img"
+              class="galleryFig-img"
             />
           </figure>
-          <figure class="galleryItem galleryItem-11">
+          <figure class="galleryFig galleryFig-11">
             <img
               src="./images/view-11.jpg"
               alt="gallery image 11"
-              class="galleryItem-img"
+              class="galleryFig-img"
             />
           </figure>
-          <figure class="galleryItem galleryItem-12">
+          <figure class="galleryFig galleryFig-12">
             <img
               src="./images/view-12.jpg"
               alt="gallery image 12"
-              class="galleryItem-img"
+              class="galleryFig-img"
             />
           </figure>
-          <figure class="galleryItem galleryItem-13">
+          <figure class="galleryFig galleryFig-13">
             <img
               src="./images/view-13.jpg"
               alt="gallery image 13"
-              class="galleryItem-img"
+              class="galleryFig-img"
             />
           </figure>
-          <figure class="galleryItem galleryItem-14">
+          <figure class="galleryFig galleryFig-14">
             <img
               src="./images/view-14.jpg"
               alt="gallery image 14"
-              class="galleryItem-img"
+              class="galleryFig-img"
             />
           </figure>
         </div>
 
-        <div class="locationDetails">
-          <h3>Visit, Call, or Email</h3>
-          <p>
+        <div class="locationInfo">
+          <h3 class="locationInfo-heading">Visit, Call, or Email</h3>
+          <p class="locationInfo-text">
             10 Crozerville Rd*<br />
             Aston, PA 19014<br />
             (610) 358-1888<br />
-            <a href="mailto:info@spartanfitgym.com">info@spartanfitgym.com</a>
+            <a class="locationInfo-link" href="mailto:info@spartanfitgym.com"
+              >info@spartanfitgym.com</a
+            >
           </p>
 
-          <h3>Hours</h3>
-          <p>
+          <h3 class="locationInfo-heading">Hours</h3>
+          <p class="locationInfo-text">
             Monday-Friday: 5am-9pm<br />
             Saturday: 8am-4pm<br />
             Sunday: 8am-12pm
           </p>
-          <h3>Semi-Private Session Schedule</h3>
-          <p>
-            <a href="/schedule">Click here to see our current LIFT schedule</a>.
+          <h3 class="locationInfo-heading">Semi-Private Session Schedule</h3>
+          <p class="locationInfo-text">
+            <a class="locationInfo-link" href="/schedule"
+              >Click here to see our current LIFT schedule</a
+            >.
           </p>
         </div>
       </section>
 
       <!-- location with google map marker and address -->
       <footer class="footer">
-        <p>
-          © 2019 Spartan Fitness Gym. | Privacy Policy | Terms and Conditions
-        </p>
-        <div class="footer-social">
-          <a href="#"><i class="fab fa-twitter "></i></a>
-          <a href="#"><i class="fab fa-linkedin "></i></a>
-          <a href="#"><i class="fab fa-facebook "></i></a>
-          <a href="#"><i class="fab fa-instagram "></i></a>
+        <div class="footer-copyright">
+          <p class="footer-text">
+            © 2019 Spartan Fitness Gym. | Privacy Policy | Terms and Conditions
+          </p>
+        </div>
+        <div class="footerSocial">
+          <a class="footerSocial-link" href="#">
+            <i class="fab fa-twitter "></i>
+          </a>
+          <a class="footerSocial-link" href="#">
+            <i class="fab fa-linkedin "></i>
+          </a>
+          <a class="footerSocial-link" href="#">
+            <i class="fab fa-facebook "></i>
+          </a>
+          <a class="footerSocial-link" href="#">
+            <i class="fab fa-instagram "></i>
+          </a>
         </div>
       </footer>
     </main>

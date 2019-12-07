@@ -19,15 +19,11 @@
 .heroContent {
   //   position: relative;
   height: 80vh;
-  &-heading {
+  &-head {
     position: relative;
     top: 40%;
     left: 50%;
     width: 50%;
     transform: translate(-50%, -40%);
-    text-align: center;
-    font-size: 7rem;
-    color: $brand-lightGold;
-    font-weight: 800;
   }
 }

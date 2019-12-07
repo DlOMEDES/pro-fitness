@@ -1,15 +1,9 @@
-.sectionTips {
+.tips {
   background: $brand-lightSilver;
   &-head {
-    text-align: center;
     margin: 5rem auto 1rem auto;
     width: 25%;
-    text-transform: uppercase;
     border-bottom: 0.2rem solid $brand-lightRed;
-  }
-
-  &-copy {
-    text-align: center;
   }
 }
 
@@ -17,10 +11,7 @@
   display: flex;
   margin-top: 10rem;
   justify-content: center;
-  &-1 {
-  }
-  &-2 {
-  }
+
   &-3 {
     margin-right: 0;
   }

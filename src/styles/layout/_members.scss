@@ -1,0 +1,14 @@
+.membersHead {
+  margin: 5rem auto;
+  width: 25%;
+  border-bottom: 0.2rem solid $brand-lightGold;
+}
+
+.membersGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 5rem;
+}
+
+.membersGrid-text {
+}

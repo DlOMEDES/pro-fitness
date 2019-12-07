@@ -1,4 +1,4 @@
-.sectionStaff {
+.staff {
   padding: 10rem 0;
   background: $black;
   color: $white;
@@ -12,7 +12,10 @@
 }
 .staffIntro {
   margin: 0 5rem 0 20rem;
-  text-transform: uppercase;
   border-bottom: 0.2rem solid $brand-lightGold;
   padding-bottom: 1rem;
+}
+
+.staffHeading {
+  text-transform: uppercase;
 }

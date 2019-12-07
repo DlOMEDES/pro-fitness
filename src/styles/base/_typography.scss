@@ -1,11 +1,89 @@
-h1 {
-  font-size: 3.6rem;
+body {
+  font-family: "Open Sans";
+  color: $black;
+  font-size: 1.6rem;
+  line-height: 1.7;
+  font-weight: 400;
+  letter-spacing: 1.2;
+}
+// HEADER
+.mainHeader {
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 1rem 0px;
+  font-size: 1.6rem;
+}
+// HERO BANNER
+.heroContent-heading {
+  text-align: center;
+  font-size: 7rem;
+  color: $brand-lightGold;
+  font-weight: 800;
+}
+// QUOTE
+.mainQuote {
+  background: rgba($brand-darkSilver, 0.2);
+  text-align: center;
+  padding: 5rem;
+  width: 100%;
+
+  q {
+    width: 50%;
+  }
 }
 
-h2 {
+// SECTION MEMBERS
+.membersHeading {
+  text-align: center;
+  text-transform: uppercase;
+}
+.membersGrid-title {
+  padding: 1rem 0;
+  text-transform: uppercase;
+}
+.slide-text {
+  color: $white;
   font-size: 2.4rem;
+  text-transform: uppercase;
+  position: absolute;
+  bottom: 2rem;
+  right: 2rem;
+  background-color: $black;
+  padding: 0 3rem;
 }
 
-p {
-  font-size: 1.8rem;
+// SECTION TIPS
+.tips-heading {
+  text-align: center;
+  text-transform: uppercase;
+}
+.tips-text {
+  text-align: center;
+}
+
+// BOX
+.box-heading {
+}
+
+.box-text {
+}
+
+// LOCATION
+.locationInfo-heading {
+}
+
+.locationInfo-text {
+}
+
+.locationInfo-link {
+  color: $brand-lightRed;
+}
+
+// FOOTER
+.footer-text {
+  color: $white;
+  font-size: 1.2rem;
+}
+
+.footerSocial-link {
 }

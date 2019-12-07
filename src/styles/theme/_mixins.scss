@@ -1,0 +1,54 @@
+/*
+MEDIA QUERY BREAKPOINTS
+0-600px         Phone
+600-900px       tablet portrait
+900-1200px      tablet landscape
+1200-1800px     normal laptop & desktop
+1800px +        big screen with high-resolution
+*/
+
+/*
+STANDARD MIXIN
+@mixin forPhones {
+  @media (max-width: 600px) {
+    @content;
+  }
+}
+*/
+
+/*
+MIXIN WITH BREAKPOINT VARIABLE ARGUMENT
+- phone
+- tabPort
+- tabLand
+- desktop
+
+ORDER: base + typography > general layout > components
+
+1EM = 16PX EM WORKS BETTER THAN REM ON MEDIA QUERIES AND ARE NOT AFFECTED BY THE BASE SIZE SETTING OF 62.5% */
+@mixin for($breakpoint) {
+  @if $breakpoint == phone {
+    // 600px / 16px
+    @media (max-width: 37.5‬em) {
+      @content;
+    }
+  }
+  @if $breakpoint == tabPort {
+    // 900px / 16px
+    @media (max-width: 56.25‬em) {
+      @content;
+    }
+  }
+  @if $breakpoint == tabLand {
+    // 1200px / 16px
+    @media (max-width: 75‬em) {
+      @content;
+    }
+  }
+  @if $breakpoint == desktop {
+    // 1800px / 16px
+    @media (min-width: 112.5‬em) {
+      @content;
+    }
+  }
+}
