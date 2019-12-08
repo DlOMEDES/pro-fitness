@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*
 color variables
 */
@@ -26,8 +25,7 @@ MIXIN WITH BREAKPOINT VARIABLE ARGUMENT
 - desktop
 
 ORDER: base + typography > general layout > components
-
-1EM = 16PX EM WORKS BETTER THAN REM ON MEDIA QUERIES AND ARE NOT AFFECTED BY THE BASE SIZE SETTING OF 62.5% */
+*/
 *,
 *:before,
 *:after {
@@ -37,23 +35,26 @@ ORDER: base + typography > general layout > components
 }
 
 html {
-  box-sizing: border-box;
   font-size: 62.5%;
 }
-@media (max-width: 75‬em) {
+@media (max-width: 1200px) {
+  html {
+    font-size: 56.25%;
+  }
+}
+@media (max-width: 900px) {
   html {
     font-size: 50%;
   }
 }
-@media (max-width: 56.25‬em) {
+@media (min-width: 1800px) {
   html {
-    font-size: 50%;
+    font-size: 75%;
   }
 }
-@media (min-width: 112.5‬em) {
-  html {
-    font-size: 50%;
-  }
+
+body {
+  box-sizing: border-box;
 }
 
 ul,
@@ -68,64 +69,72 @@ a {
 body {
   font-family: "Open Sans";
   color: #000000;
-  font-size: 1.6rem;
   line-height: 1.7;
   font-weight: 400;
   letter-spacing: 1.2;
+}
+
+.notifyBar-text {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 1.2rem;
 }
 
 .mainHeader {
   font-weight: 700;
   text-transform: uppercase;
   padding: 1rem 0px;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
 }
 
 .heroContent-heading {
   text-align: center;
-  font-size: 7rem;
+  font-size: 5rem;
   color: #ffd700;
   font-weight: 800;
 }
 
-.mainQuote {
-  background: rgba(179, 179, 179, 0.2);
-  text-align: center;
-  padding: 5rem;
-  width: 100%;
-}
-.mainQuote q {
-  width: 50%;
+.text {
+  font-size: 1.6rem;
 }
 
 .membersHeading {
   text-align: center;
   text-transform: uppercase;
+  font-size: 2.4rem;
 }
 
 .membersGrid-title {
   padding: 1rem 0;
   text-transform: uppercase;
+  font-size: 1.8rem;
+}
+
+.membersGrid-text {
+  font-size: 1.6rem;
+}
+
+.staffHeading {
+  font-size: 2.4rem;
 }
 
 .slide-text {
-  color: #ffffff;
   font-size: 2.4rem;
   text-transform: uppercase;
-  position: absolute;
-  bottom: 2rem;
-  right: 2rem;
-  background-color: #000000;
-  padding: 0 3rem;
 }
 
 .tips-heading {
   text-align: center;
   text-transform: uppercase;
+  font-size: 2.4rem;
 }
 
-.tips-text {
-  text-align: center;
+.box-heading {
+  font-size: 1.8rem;
+}
+
+.locationInfo-heading {
+  font-size: 1.8rem;
 }
 
 .locationInfo-link {
@@ -135,16 +144,6 @@ body {
 .footer-text {
   color: #ffffff;
   font-size: 1.2rem;
-}
-
-.btn {
-  border-radius: 5rem;
-  padding: 1rem 2rem;
-  color: #000000;
-}
-.btn-primary {
-  background: #000000;
-  color: #ffd700;
 }
 
 .notifyBar {
@@ -157,14 +156,9 @@ body {
   justify-content: center;
   align-items: center;
   color: #d8d8d8;
-  font-weight: 700;
 }
 .notifyBar-content {
   width: 100%;
-}
-.notifyBar-text {
-  text-transform: uppercase;
-  font-size: 1.4rem;
 }
 .notifyBar-close {
   position: absolute;
@@ -172,6 +166,26 @@ body {
   right: 0;
   padding: 0.5rem 2rem;
   font-size: 1.6rem;
+}
+
+.btn {
+  border-radius: 5rem;
+  padding: 0.5rem 1rem;
+  color: #000000;
+}
+.btn-primary {
+  background: #000000;
+  color: #ffd700;
+}
+
+.mainQuote {
+  background: rgba(179, 179, 179, 0.2);
+  text-align: center;
+  padding: 5rem;
+  width: 100%;
+}
+.mainQuote q {
+  width: 50%;
 }
 
 .sliderWrapper,
@@ -185,6 +199,14 @@ body {
   overflow: hidden;
   height: 70vh;
   position: relative;
+}
+.slide-text {
+  position: absolute;
+  bottom: 2rem;
+  right: 2rem;
+  background-color: #000000;
+  padding: 0 3rem;
+  color: #ffffff;
 }
 
 .sliderWrapper {
@@ -275,10 +297,10 @@ body {
 
 .box {
   border-radius: 0.5rem;
-  margin-right: 5rem;
+  margin-right: 3.5rem;
   box-shadow: 0 0 2rem rgba(0, 0, 0, 0.2);
   padding: 3rem;
-  width: 375px;
+  width: 37rem;
   background: #ffffff;
 }
 .box-head {
@@ -298,10 +320,10 @@ body {
 
 .galleryGrid {
   display: grid;
-  grid-template-columns: repeat(6, 140px);
+  grid-template-columns: repeat(6, 150px);
   grid-template-rows: repeat(6, 4vw);
   grid-gap: 0.5rem;
-  margin-right: 15rem;
+  margin-right: 10rem;
 }
 
 .galleryFig-1 {
@@ -438,6 +460,9 @@ body {
   width: 25%;
   border-bottom: 0.2rem solid #d25870;
 }
+.tips .tips-text {
+  text-align: center;
+}
 
 .tipBoxes {
   display: flex;
@@ -455,8 +480,11 @@ body {
   background-color: #ffffff;
 }
 
-.locationInfo h3 {
+.locationInfo-heading {
   margin-top: 2rem;
+}
+.locationInfo-link {
+  color: #d25870;
 }
 
 .footer {

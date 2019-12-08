@@ -6,7 +6,10 @@
 }
 
 .locationInfo {
-  h3 {
+  &-heading {
     margin-top: 2rem;
+  }
+  &-link {
+    color: $brand-lightRed;
   }
 }

@@ -24,30 +24,26 @@ MIXIN WITH BREAKPOINT VARIABLE ARGUMENT
 - desktop
 
 ORDER: base + typography > general layout > components
-
-1EM = 16PX EM WORKS BETTER THAN REM ON MEDIA QUERIES AND ARE NOT AFFECTED BY THE BASE SIZE SETTING OF 62.5% */
+*/
 @mixin for($breakpoint) {
-  @if $breakpoint == phone {
-    // 600px / 16px
-    @media (max-width: 37.5‬em) {
+  @if $breakpoint == Phone {
+    @media (max-width: 600px) {
       @content;
     }
   }
-  @if $breakpoint == tabPort {
-    // 900px / 16px
-    @media (max-width: 56.25‬em) {
+  @if $breakpoint == TabPort {
+    @media (max-width: 900px) {
       @content;
     }
   }
-  @if $breakpoint == tabLand {
-    // 1200px / 16px
-    @media (max-width: 75‬em) {
+  @if $breakpoint == TabLand {
+    @media (max-width: 1200px) {
       @content;
     }
   }
-  @if $breakpoint == desktop {
-    // 1800px / 16px
-    @media (min-width: 112.5‬em) {
+  // 1800px / 16px
+  @if $breakpoint == Desktop {
+    @media (min-width: 1800px) {
       @content;
     }
   }
