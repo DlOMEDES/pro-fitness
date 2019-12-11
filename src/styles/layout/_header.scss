@@ -1,9 +1,17 @@
+.mainHeader {
+  // padding: 1rem 0px;
+  position: relative;
+}
+
 .nav {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   height: 10rem;
   position: relative;
+  @include for(TabPort) {
+    display: none;
+  }
 }
 
 .navMenu {

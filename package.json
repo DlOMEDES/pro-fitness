@@ -2,7 +2,7 @@
   "name": "sparta-fitness",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "sass": "node-sass -w sass/main.scss dist/css/style.css --recursive",
     "dev": "parcel src/index.html"
