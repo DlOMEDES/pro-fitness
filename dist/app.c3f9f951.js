@@ -243,41 +243,35 @@ nextImg = function nextImg() {
 
 initSlide();
 },{}],"js/components/menu.js":[function(require,module,exports) {
-// select dom items
-var menuBtn = document.querySelector(".menuBtn");
-var nav = document.querySelector(".nav");
-var navMenu = document.querySelector(".navMenu");
-var navLinks = document.querySelectorAll(".navMenuLink"); // set initial state of menu
-
-var menuState = false; // create function for event
-
-toggleMenu = function toggleMenu() {
-  console.log("clicked me again!");
-
-  if (!menuState) {
-    menuBtn.classList.add("close");
-    nav.classList.add("show");
-    navMenu.classList.add("show"); // loop through navmenu links
-
-    navLinks.forEach(function (item) {
-      return item.classList.add("show");
-    }); // set state for menu
-
-    menuState = true;
-  } else {
-    // reverse toggle
-    menuBtn.classList.remove("close");
-    nav.classList.remove("show");
-    navMenu.classList.remove("show");
-    navLinks.forEach(function (item) {
-      return item.classList.remove("show");
-    });
-    menuState = false;
-  }
-}; // add event to button
-
-
-menuBtn.addEventListener("click", toggleMenu);
+// select dom elements
+// // select dom items
+// const menuBtn = document.querySelector(".menuBtn");
+// const nav = document.querySelector(".nav");
+// const navMenu = document.querySelector(".navMenu");
+// let navLinks = document.querySelectorAll(".navMenuLink");
+// // set initial state of menu
+// let menuState = false;
+// // create function for event
+// toggleMenu = () => {
+//   if (!menuState) {
+//     menuBtn.classList.add("close");
+//     nav.classList.add("show");
+//     navMenu.classList.add("show");
+//     // loop through navmenu links
+//     navLinks.forEach(item => item.classList.add("show"));
+//     // set state for menu
+//     menuState = true;
+//   } else {
+//     // reverse toggle
+//     menuBtn.classList.remove("close");
+//     nav.classList.remove("show");
+//     navMenu.classList.remove("show");
+//     navLinks.forEach(item => item.classList.remove("show"));
+//     menuState = false;
+//   }
+// };
+// // add event to button
+// menuBtn.addEventListener("click", toggleMenu);
 },{}],"js/app.js":[function(require,module,exports) {
 "use strict";
 
@@ -314,7 +308,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58721" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64936" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

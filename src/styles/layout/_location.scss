@@ -1,11 +1,10 @@
-.location {
+.locationGrid {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: $white;
 }
-
 .locationInfo {
+  margin-left: 5rem;
   &-heading {
     margin-top: 2rem;
   }

@@ -9,15 +9,18 @@
 html {
   font-size: 62.5%; //1rem = 10px; 10px/16px = 62.5%
   // width < 1200px
-  @include for(TabLand) {
+  @include for(tabLand) {
     font-size: 56.25%; // 1rem = 9px; 9/16 = 56.25%
   }
   // width < 900px
-  @include for(TabPort) {
+  @include for(tabPort) {
     font-size: 50%; // 1rem = 8px; 8/16 = 50%
   }
+  @include for(phone) {
+    font-size: 43%; // 1rem = 7px; 7/16 = 43%
+  }
   // width >= 1800
-  @include for(Desktop) {
+  @include for(laptop) {
     font-size: 75%; // 1rem = 12px; 12/16 = 75%
   }
 }
@@ -35,12 +38,22 @@ a {
   text-decoration: none;
 }
 
-// h1,
-// h2,
-// h3,
-// h4,
-// h5,
-// h6 {
-//   padding: 0;
-//   margin: 0;
-// }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin: 0;
+}
+
+.sections {
+  padding: 15rem 0;
+}
+
+.container {
+  width: 75%;
+  max-width: 144.4rem;
+  margin: 0 auto;
+}

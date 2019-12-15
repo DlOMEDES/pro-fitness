@@ -1,5 +1,4 @@
 .mainHeader {
-  // padding: 1rem 0px;
   position: relative;
 }
 
@@ -7,10 +6,10 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  height: 10rem;
   position: relative;
+  background: $black;
   @include for(TabPort) {
-    display: none;
+    // display: none;
   }
 }
 
@@ -19,7 +18,12 @@
   align-items: center;
   &-link {
     margin: 0 1.5rem;
-    color: $black;
+    color: $white;
+    @include easeOut;
+
+    &:hover {
+      color: $brand-lightGold;
+    }
   }
 }
 

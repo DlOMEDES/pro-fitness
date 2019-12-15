@@ -1,8 +1,55 @@
 // FOR ANIMATIONS, USE KEYFRAMES!
+// slide mobile menu right
+@keyframes slideRight {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 50%;
+  }
+}
 
-// $duration: 0.3s;
-// $timingEase: cubic-bezier(0.51, 0.92, 0.24, 1);
-// $timingBounce: cubic-bezier(0.51, 0.92, 0.24, 1.15);
+@keyframes rotate180 {
+  0% {
+    opacity: 25%;
+    transform: rotate(0);
+  }
+  100% {
+    opacity: 100%;
+    transform: rotate(180deg);
+  }
+}
+
+@keyframes rotate45 {
+  0% {
+    opacity: 25%;
+    transform: rotate(0) translate(0);
+  }
+  100% {
+    opacity: 100%;
+    transform: rotate(45deg) translate(0.6rem, 0.4rem);
+  }
+}
+
+@keyframes rotateMinus45 {
+  0% {
+    opacity: 25%;
+    transform: rotate(0) translate(0);
+  }
+  100% {
+    opacity: 100%;
+    transform: rotate(-45deg) translate(1rem, -0.8rem);
+  }
+}
+// @keyframes easeOut {
+//   0% {
+//     transition: all 0.5s ease-out;
+//   }
+//   100% {
+//     transition: all 0.5s ease-out;
+//   }
+
+// }
 
 @mixin easeOut {
   transition: all 0.5s ease-out;

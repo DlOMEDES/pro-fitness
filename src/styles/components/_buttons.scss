@@ -1,9 +1,16 @@
 .btn {
   border-radius: 5rem;
-  padding: 0.5rem 1rem;
+  padding: 0.3rem 1rem;
   color: $black;
+  @include easeOut;
+  @include for(TabPort) {
+    margin: 1.5rem 0;
+  }
   &-primary {
-    background: $black;
-    color: $brand-lightGold;
+    background: $white;
+    color: $black;
+    &:hover {
+      background-color: $brand-lightGold;
+    }
   }
 }

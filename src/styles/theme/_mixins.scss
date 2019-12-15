@@ -26,24 +26,23 @@ MIXIN WITH BREAKPOINT VARIABLE ARGUMENT
 ORDER: base + typography > general layout > components
 */
 @mixin for($breakpoint) {
-  @if $breakpoint == Phone {
-    @media (max-width: 600px) {
+  @if $breakpoint == phone {
+    @media (max-width: 450px) {
       @content;
     }
   }
-  @if $breakpoint == TabPort {
-    @media (max-width: 900px) {
+  @if $breakpoint == tabPort {
+    @media (max-width: 768px) {
       @content;
     }
   }
-  @if $breakpoint == TabLand {
-    @media (max-width: 1200px) {
+  @if $breakpoint == tabLand {
+    @media (max-width: 1440px) {
       @content;
     }
   }
-  // 1800px / 16px
-  @if $breakpoint == Desktop {
-    @media (min-width: 1800px) {
+  @if $breakpoint == desktop {
+    @media (min-width: 1440px) {
       @content;
     }
   }

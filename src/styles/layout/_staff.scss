@@ -1,17 +1,14 @@
 .staff {
-  padding: 10rem 0;
   background: $black;
   color: $white;
 }
 
 .staffContainer {
   display: flex;
-  // justify-content: flex-end;
+  justify-content: center;
   align-items: center;
-  margin: 5rem 0;
 }
 .staffIntro {
-  margin: 0 5rem 0 20rem;
   border-bottom: 0.2rem solid $brand-lightGold;
   padding-bottom: 1rem;
 }
