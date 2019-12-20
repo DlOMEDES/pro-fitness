@@ -8,8 +8,8 @@
   align-items: center;
   position: relative;
   background: $black;
-  @include for(TabPort) {
-    // display: none;
+  @include for(phone) {
+    display: none;
   }
 }
 

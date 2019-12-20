@@ -2,9 +2,19 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @include for(phone) {
+    flex-direction: column;
+  }
+  @include for(tablet) {
+    flex-direction: column;
+  }
 }
 .locationInfo {
   margin-left: 5rem;
+  @include for(phone) {
+    margin-left: 0;
+  }
   &-heading {
     margin-top: 2rem;
   }

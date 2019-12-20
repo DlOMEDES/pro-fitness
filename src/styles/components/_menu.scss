@@ -1,67 +1,36 @@
 // mobile menu
 .menu {
-  position: absolute;
-  top: 0;
-  left: 0;
-  background: $black;
-  width: 50%;
-  height: 100vh;
-  z-index: 1;
-}
-
-// mobile menu button
-.menuBtn {
-  @include for(TabPort) {
+  transform: translate3d(-100%, 0, 0);
+  @include easeOut;
+  @include for(phone) {
     position: absolute;
+    top: 0;
+    left: 0;
+    background: $black;
+    width: 37.5rem;
+    height: 100vh;
     z-index: 1;
-    left: 4rem;
-    top: 7rem;
-    padding: 0.5rem;
-    cursor: pointer;
-    @include easeOut;
-
-    &-line {
-      width: 3rem;
-      height: 0.4rem;
-      margin: 0 0 0.6rem 0;
-      background: $white;
-      @include easeOut;
-    }
-
-    // when closed
-    &.close {
-      // rotate btn lines into X
-      transform: rotate(180deg);
-      // animation: rotate180 1s ease-in-out;
-      .menuBtn-line {
-        background: $brand-lightGold;
-        // rotate line 1
-        &:nth-child(1) {
-          transform: rotate(45deg) translate(0.6rem, 0.4rem);
-          // animation: rotate45 0.5s ease-in;
-        }
-        // hide line 2
-        &:nth-child(2) {
-          opacity: 0;
-        }
-        // rotate line 3
-        &:nth-child(3) {
-          transform: rotate(-45deg) translate(1rem, -0.8rem);
-          // animation: rotateMinus45 0.5s ease-in;
-        }
-      }
-    }
+  }
+  &.show {
+    transform: translate3d(0, 0, 0);
   }
 }
-
+// mobile navigation
 .menuMobile {
   display: none;
-  @include for(TabPort) {
+  margin-top: 20rem;
+  @include for(phone) {
     display: flex;
     flex-direction: column;
-    // z-index: 2;
+    align-items: center;
   }
-
+  // links
   &-link {
+    color: $white;
+    padding: 2rem 0;
+    @include easeOut;
+    &:hover {
+      color: $brand-lightGold;
+    }
   }
 }

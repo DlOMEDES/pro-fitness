@@ -7,10 +7,14 @@ body {
   letter-spacing: 1.2;
 }
 
-.notifyBar-text {
+.notifyBar-text,
+.notifyBar-close {
   font-weight: 700;
   text-transform: uppercase;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
+  @include for(phone) {
+    font-size: 1rem;
+  }
 }
 
 // HEADER
@@ -19,10 +23,16 @@ body {
   text-transform: uppercase;
   font-size: 1.4rem;
 }
+
+.menuMobile-link {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+}
 // HERO BANNER
 .heroContent-heading {
   text-align: center;
-  font-size: 5rem;
+  font-size: 4rem;
   color: $brand-lightGold;
   font-weight: 800;
 }

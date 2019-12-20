@@ -8,20 +8,11 @@
 
 html {
   font-size: 62.5%; //1rem = 10px; 10px/16px = 62.5%
-  // width < 1200px
-  @include for(tabLand) {
-    font-size: 56.25%; // 1rem = 9px; 9/16 = 56.25%
-  }
-  // width < 900px
-  @include for(tabPort) {
-    font-size: 50%; // 1rem = 8px; 8/16 = 50%
-  }
   @include for(phone) {
-    font-size: 43%; // 1rem = 7px; 7/16 = 43%
+    font-size: 55%; // 14px
   }
-  // width >= 1800
-  @include for(laptop) {
-    font-size: 75%; // 1rem = 12px; 12/16 = 75%
+  @include for(latop) {
+    font-size: 70%; // 14px
   }
 }
 
@@ -56,4 +47,10 @@ h6 {
   width: 75%;
   max-width: 144.4rem;
   margin: 0 auto;
+  @include for(phone) {
+    width: 100%;
+  }
+  @include for(tablet) {
+    width: 100%;
+  }
 }

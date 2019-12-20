@@ -6,18 +6,17 @@
   width: 100%;
   text-align: center;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   color: $brand-lightGold;
   &-content {
-    width: 100%;
+    flex-grow: 1;
   }
 
   &-close {
-    position: absolute;
-    top: 0px;
-    right: 0;
-    padding: 0.5rem 2rem;
-    font-size: 1.6rem;
+    padding-right: 3rem;
+    @include for(phone) {
+      padding-right: 2rem;
+    }
   }
 }

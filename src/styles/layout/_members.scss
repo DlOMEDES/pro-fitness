@@ -1,13 +1,24 @@
 .membersHead {
   margin: 0 auto 5rem auto;
-  width: 25%;
+  width: 50%;
   border-bottom: 0.2rem solid $brand-lightGold;
+  @include for(phone) {
+    width: 75%;
+  }
 }
 
 .membersGrid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 5rem;
+  @include for(phone) {
+    grid-template-columns: 1fr;
+    padding: 0 5rem;
+  }
+  @include for(tablet) {
+    grid-template-columns: 1fr;
+    padding: 0 5rem;
+  }
 }
 
 .membersGrid-text {

@@ -7,10 +7,22 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  @include for(phone) {
+    flex-direction: column;
+  }
+  @include for(tablet) {
+    flex-direction: column;
+  }
 }
 .staffIntro {
   border-bottom: 0.2rem solid $brand-lightGold;
   padding-bottom: 1rem;
+  margin: 5rem;
+  text-align: center;
+
+  @include for(phone) {
+    margin: 0 0 5rem 0;
+  }
 }
 
 .staffHeading {

@@ -5,6 +5,9 @@
     margin: 0 auto;
     width: 25%;
     border-bottom: 0.2rem solid $brand-lightRed;
+    @include for(phone) {
+      width: 75%;
+    }
   }
   .tips-text {
     margin: 2rem;
@@ -16,8 +19,20 @@
   display: flex;
   margin-top: 5rem;
   justify-content: center;
-
+  padding: 0 3rem;
+  @include for(phone) {
+    flex-direction: column;
+  }
+  @include for(tablet) {
+    flex-direction: column;
+  }
   &-3 {
     margin-right: 0;
+    @include for(phone) {
+      margin: 3rem auto;
+    }
+    @include for(tablet) {
+      margin: 3rem auto;
+    }
   }
 }

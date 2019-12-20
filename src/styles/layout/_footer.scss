@@ -3,13 +3,27 @@
   height: 7rem;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
+
+  @include for(phone) {
+    flex-direction: column;
+    text-align: center;
+    height: auto;
+  }
+}
+
+.footer-copyright {
+  @include for(phone) {
+    margin: 3rem 0;
+  }
 }
 
 .footerSocial {
-  margin-left: 13rem;
-
+  @include for(phone) {
+    margin-bottom: 3rem;
+  }
   &-link {
+    font-size: 2rem;
     margin-right: 1rem;
     color: $white;
     @include easeOut;

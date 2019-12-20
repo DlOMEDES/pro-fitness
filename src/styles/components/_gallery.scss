@@ -1,8 +1,16 @@
 .galleryGrid {
   display: grid;
-  grid-template-columns: repeat(6, 150px);
-  grid-template-rows: repeat(6, 4vw);
+  // grid-template-columns: repeat(6, 150px);
+  // grid-template-rows: repeat(6, 4vw);
+  grid-template: repeat(6, 4vw) / repeat(6, 1fr);
   grid-gap: 0.5rem;
+  @include for(tablet) {
+    grid-template: repeat(6, 10vw) / repeat(6, 1fr);
+  }
+  @include for(phone) {
+    grid-template: repeat(6, 15vw) / repeat(6, 1fr);
+    margin-bottom: 5rem;
+  }
 }
 
 .galleryFig {
@@ -53,6 +61,6 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    // display: block;
+    display: block;
   }
 }
