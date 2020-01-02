@@ -4,13 +4,17 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "sass": "node-sass -w sass/main.scss dist/css/style.css --recursive",
-    "dev": "parcel src/index.html"
+    "sass": "node-sass -w sass/styles.scss dist/css/style.css --recursive",
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html --public-url /",
+    "deploy": "gh-pages -d dist"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "homepage": "https://github.com/DlOMEDES/spartan-fitness",
   "dependencies": {
+    "gh-pages": "^2.1.1",
     "node-sass": "^4.13.0",
     "parcel-bundler": "^1.12.4"
   },
