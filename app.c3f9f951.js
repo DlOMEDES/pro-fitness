@@ -189,7 +189,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"C:\\Users\\Pro\\dev\\static\\spartan-fitness\\src\\images\\Athena.jpg":[["Athena.3d787545.jpg","images/Athena.jpg"],"images/Athena.jpg"],"C:\\Users\\Pro\\dev\\static\\spartan-fitness\\src\\images\\Leo.jpg":[["Leo.af97a938.jpg","images/Leo.jpg"],"images/Leo.jpg"],"C:\\Users\\Pro\\dev\\static\\spartan-fitness\\src\\images\\Ellie.jpg":[["Ellie.2a9f719f.jpg","images/Ellie.jpg"],"images/Ellie.jpg"],"C:\\Users\\Pro\\dev\\static\\spartan-fitness\\src\\images\\Kai.jpg":[["Kai.e187ab85.jpg","images/Kai.jpg"],"images/Kai.jpg"],"C:\\Users\\Pro\\dev\\static\\spartan-fitness\\src\\images\\Emery.jpg":[["Emery.42ae0118.jpg","images/Emery.jpg"],"images/Emery.jpg"],"C:\\Users\\Pro\\dev\\static\\spartan-fitness\\src\\images\\Kolton.jpg":[["Kolton.25476f34.jpg","images/Kolton.jpg"],"images/Kolton.jpg"],"C:\\Users\\Pro\\dev\\static\\spartan-fitness\\src\\images\\Leah.jpg":[["Leah.39bb420e.jpg","images/Leah.jpg"],"images/Leah.jpg"],"C:\\Users\\Pro\\dev\\static\\spartan-fitness\\src\\images\\Ivan.jpg":[["Ivan.a60debde.jpg","images/Ivan.jpg"],"images/Ivan.jpg"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"js/components/slider.js":[function(require,module,exports) {
+},{"/Users/Diomedes/dev/projects/static/spartan-fitness/src/images/Athena.jpg":[["Athena.3d787545.jpg","images/Athena.jpg"],"images/Athena.jpg"],"/Users/Diomedes/dev/projects/static/spartan-fitness/src/images/Leo.jpg":[["Leo.af97a938.jpg","images/Leo.jpg"],"images/Leo.jpg"],"/Users/Diomedes/dev/projects/static/spartan-fitness/src/images/Ellie.jpg":[["Ellie.2a9f719f.jpg","images/Ellie.jpg"],"images/Ellie.jpg"],"/Users/Diomedes/dev/projects/static/spartan-fitness/src/images/Kai.jpg":[["Kai.e187ab85.jpg","images/Kai.jpg"],"images/Kai.jpg"],"/Users/Diomedes/dev/projects/static/spartan-fitness/src/images/Emery.jpg":[["Emery.42ae0118.jpg","images/Emery.jpg"],"images/Emery.jpg"],"/Users/Diomedes/dev/projects/static/spartan-fitness/src/images/Kolton.jpg":[["Kolton.25476f34.jpg","images/Kolton.jpg"],"images/Kolton.jpg"],"/Users/Diomedes/dev/projects/static/spartan-fitness/src/images/Leah.jpg":[["Leah.39bb420e.jpg","images/Leah.jpg"],"images/Leah.jpg"],"/Users/Diomedes/dev/projects/static/spartan-fitness/src/images/Ivan.jpg":[["Ivan.a60debde.jpg","images/Ivan.jpg"],"images/Ivan.jpg"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"js/components/slider.js":[function(require,module,exports) {
 // querySectorAll return a html collection like an array with index
 var slides = document.querySelectorAll(".slide"),
     // target the arrows
@@ -313,7 +313,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "61338" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49577" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
