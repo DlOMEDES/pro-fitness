@@ -1,0 +1,103 @@
+.sliderWrapper {
+  overflow: hidden;
+  height: 70vh;
+  width: 50%;
+  position: relative;
+  @include for(phone) {
+    width: 100%;
+  }
+  @include for(tablet) {
+    width: 100%;
+  }
+}
+#slider {
+  margin: 0 auto;
+  @include for(phone) {
+    height: 50vh;
+    width: 100%;
+  }
+}
+
+.slide {
+  &-content {
+    overflow: hidden;
+    height: 70vh;
+    position: relative;
+  }
+  &-text {
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem;
+    background-color: $black;
+    padding: 0 3rem;
+    color: $white;
+  }
+}
+
+.slide {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: transform 0.3s ease-in-out;
+  &-1 {
+    background-image: url(../../dist/images/Athena.jpg);
+  }
+  &-2 {
+    background-image: url(../../dist/images/Leo.jpg);
+  }
+  &-3 {
+    background-image: url(../../dist/images/Ellie.jpg);
+  }
+  &-4 {
+    background-image: url(../../dist/images/Kai.jpg);
+  }
+  &-5 {
+    background-image: url(../../dist/images/Emery.jpg);
+  }
+  &-6 {
+    background-image: url(../../dist/images/Kolton.jpg);
+  }
+  &-7 {
+    background-image: url(../../dist/images/Leah.jpg);
+  }
+  &-8 {
+    background-image: url(../../dist/images/Ivan.jpg);
+  }
+
+  &-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+}
+.arrow {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  margin-top: -1.5rem;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+#arrowLeft {
+  border-width: 1.5rem 2.5rem 1.5rem 0;
+  left: 0;
+  margin-left: 2rem;
+  border-color: transparent $brand-lightGold transparent transparent;
+  @include for(phone) {
+    margin-left: 1rem;
+  }
+}
+
+#arrowRight {
+  border-width: 1.5rem 0 1.5rem 2.5rem;
+  right: 0;
+  margin-right: 2rem;
+  border-color: transparent transparent transparent $brand-lightGold;
+  @include for(phone) {
+    margin-right: 1rem;
+  }
+}
