@@ -184,108 +184,12 @@ function reloadCSS() {
 }
 
 module.exports = reloadCSS;
-},{"./bundle-url":"../node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"styles/styles.scss":[function(require,module,exports) {
+},{"./bundle-url":"../node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"../dist/css/styles.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"/Users/Diomedes/dev/projects/static/spartan-fitness/src/images/Athena.jpg":[["Athena.3d787545.jpg","images/Athena.jpg"],"images/Athena.jpg"],"/Users/Diomedes/dev/projects/static/spartan-fitness/src/images/Leo.jpg":[["Leo.af97a938.jpg","images/Leo.jpg"],"images/Leo.jpg"],"/Users/Diomedes/dev/projects/static/spartan-fitness/src/images/Ellie.jpg":[["Ellie.2a9f719f.jpg","images/Ellie.jpg"],"images/Ellie.jpg"],"/Users/Diomedes/dev/projects/static/spartan-fitness/src/images/Kai.jpg":[["Kai.e187ab85.jpg","images/Kai.jpg"],"images/Kai.jpg"],"/Users/Diomedes/dev/projects/static/spartan-fitness/src/images/Emery.jpg":[["Emery.42ae0118.jpg","images/Emery.jpg"],"images/Emery.jpg"],"/Users/Diomedes/dev/projects/static/spartan-fitness/src/images/Kolton.jpg":[["Kolton.25476f34.jpg","images/Kolton.jpg"],"images/Kolton.jpg"],"/Users/Diomedes/dev/projects/static/spartan-fitness/src/images/Leah.jpg":[["Leah.39bb420e.jpg","images/Leah.jpg"],"images/Leah.jpg"],"/Users/Diomedes/dev/projects/static/spartan-fitness/src/images/Ivan.jpg":[["Ivan.a60debde.jpg","images/Ivan.jpg"],"images/Ivan.jpg"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"js/components/slider.js":[function(require,module,exports) {
-// querySectorAll return a html collection like an array with index
-var slides = document.querySelectorAll(".slide"),
-    // target the arrows
-arrowLeft = document.querySelector("#arrowLeft"),
-    arrowRight = document.querySelector("#arrowRight"); // target current slide
-
-currentSlide = 0; // prep and clear all images
-
-resetImgs = function resetImgs() {
-  for (var i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-}; // initialize slide
-
-
-initSlide = function initSlide() {
-  resetImgs();
-  slides[0].style.display = "block";
-}; // when left arrow is click show previous image
-
-
-arrowLeft.addEventListener("click", function () {
-  if (currentSlide === 0) {
-    currentSlide = slides.length;
-  }
-
-  prevImg();
-}); // show previous image
-
-prevImg = function prevImg() {
-  resetImgs();
-  slides[currentSlide - 1].style.display = "block";
-  currentSlide--;
-}; // when right arrow is clicked
-
-
-arrowRight.addEventListener("click", function () {
-  if (currentSlide === slides.length - 1) {
-    currentSlide = -1;
-  }
-
-  nextImg();
-}); // show next
-
-nextImg = function nextImg() {
-  resetImgs();
-  slides[currentSlide + 1].style.display = "block";
-  currentSlide++;
-}; // call initialized slide
-
-
-initSlide();
-},{}],"js/components/menu.js":[function(require,module,exports) {
-// select dom elements
-// // select dom items
-var menuBtn = document.querySelector(".menuBtn");
-var menu = document.querySelector(".menu");
-var menuMobile = document.querySelector(".menuMobile");
-var mobileLinks = document.querySelectorAll(".menuMobile-link"); // set initial state of menu
-
-var menuState = false; // create function for event
-
-toggleMenu = function toggleMenu() {
-  if (!menuState) {
-    menuBtn.classList.add("close");
-    menu.classList.add("show");
-    menuMobile.classList.add("show"); // loop through navmenu links
-
-    mobileLinks.forEach(function (item) {
-      return item.classList.add("show");
-    }); // set state for menu
-
-    menuState = true;
-  } else {
-    // reverse toggle
-    menuBtn.classList.remove("close");
-    menu.classList.remove("show");
-    menuMobile.classList.remove("show");
-    mobileLinks.forEach(function (item) {
-      return item.classList.remove("show");
-    });
-    menuState = false;
-  }
-}; // add event to button
-
-
-menuBtn.addEventListener("click", toggleMenu);
-},{}],"js/app.js":[function(require,module,exports) {
-"use strict";
-
-require("../styles/styles.scss");
-
-require("./components/slider");
-
-require("./components/menu");
-},{"../styles/styles.scss":"styles/styles.scss","./components/slider":"js/components/slider.js","./components/menu":"js/components/menu.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"/Users/Diomedes/dev/projects/static/spartan-fitness/src/images/Athena.jpg":[["Athena.3d787545.jpg","images/Athena.jpg"],"images/Athena.jpg"],"/Users/Diomedes/dev/projects/static/spartan-fitness/src/images/Leo.jpg":[["Leo.af97a938.jpg","images/Leo.jpg"],"images/Leo.jpg"],"/Users/Diomedes/dev/projects/static/spartan-fitness/src/images/Ellie.jpg":[["Ellie.2a9f719f.jpg","images/Ellie.jpg"],"images/Ellie.jpg"],"/Users/Diomedes/dev/projects/static/spartan-fitness/src/images/Kai.jpg":[["Kai.e187ab85.jpg","images/Kai.jpg"],"images/Kai.jpg"],"/Users/Diomedes/dev/projects/static/spartan-fitness/src/images/Emery.jpg":[["Emery.42ae0118.jpg","images/Emery.jpg"],"images/Emery.jpg"],"/Users/Diomedes/dev/projects/static/spartan-fitness/src/images/Kolton.jpg":[["Kolton.25476f34.jpg","images/Kolton.jpg"],"images/Kolton.jpg"],"/Users/Diomedes/dev/projects/static/spartan-fitness/src/images/Leah.jpg":[["Leah.39bb420e.jpg","images/Leah.jpg"],"images/Leah.jpg"],"/Users/Diomedes/dev/projects/static/spartan-fitness/src/images/Ivan.jpg":[["Ivan.a60debde.jpg","images/Ivan.jpg"],"images/Ivan.jpg"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -489,5 +393,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js","js/app.js"], null)
-//# sourceMappingURL=/app.c3f9f951.js.map
+},{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js"], null)
+//# sourceMappingURL=/styles.0d56fec4.js.map

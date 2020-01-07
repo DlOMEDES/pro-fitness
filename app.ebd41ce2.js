@@ -7,4 +7,4 @@ var e=document.querySelector(".menuBtn"),s=document.querySelector(".menu"),o=doc
 },{}],"QdeU":[function(require,module,exports) {
 "use strict";require("../styles/styles.scss"),require("./components/slider"),require("./components/menu");
 },{"../styles/styles.scss":"Hyr9","./components/slider":"t4Rl","./components/menu":"yRWL"}]},{},["QdeU"], null)
-//# sourceMappingURL=/app.6d7e163b.js.map
+//# sourceMappingURL=/app.ebd41ce2.js.map
