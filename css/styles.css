@@ -312,7 +312,8 @@ body {
   background: #ffffff; }
   @media (max-width: 768px) {
     .box {
-      margin: 3rem auto; } }
+      margin: 3rem auto;
+      width: 31rem; } }
   @media (max-width: 960px) {
     .box {
       margin: 3rem auto; } }
