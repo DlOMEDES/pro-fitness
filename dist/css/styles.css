@@ -256,10 +256,9 @@ body {
   .slide-1 {
     background-image: url(../images/Athena.jpg); }
   .slide-2 {
-    background-image: url(../images/Leo.jpg);
-    background-image: url(../images/Athena.jpg); }
+    background-image: url("/images/Leo.jpg"); }
   .slide-2 {
-    background-image: url(../images/Leo.jpg); }
+    background-image: url("../images/Leo.jpg"); }
   .slide-3 {
     background-image: url(../images/Ellie.jpg); }
   .slide-4 {
