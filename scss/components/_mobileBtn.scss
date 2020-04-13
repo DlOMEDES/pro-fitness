@@ -3,8 +3,8 @@
   @include for(phone) {
     position: absolute;
     z-index: 2;
-    left: 4rem;
-    top: 7rem;
+    left: 2rem;
+    top: 2rem;
     padding: 0.5rem;
     cursor: pointer;
     @include easeOut;

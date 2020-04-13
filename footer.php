@@ -1,5 +1,6 @@
       <!-- location with google map marker and address -->
-      <footer class="footer">
+
+    <footer class="footer">
         <div class="footer-copyright">
           <p class="footer-text">
             © 2019 Spartan Fitness Gym. | Privacy Policy | Terms and Conditions
@@ -20,8 +21,6 @@
           </a>
         </div>
       </footer>
-    </main>
     <?php wp_footer(); ?>
   </body>
-  <script src="./js/app.js"></script>
 </html>

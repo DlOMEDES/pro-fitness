@@ -1,0 +1,4 @@
+- add social icons.
+- hollow out the content.
+- finish template page.
+- keep footer at the bottom.
