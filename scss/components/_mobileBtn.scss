@@ -1,10 +1,10 @@
 // mobile button & lines
 .menuBtn {
   @include for(phone) {
-    position: absolute;
+    position: fixed;
     z-index: 2;
     left: 2rem;
-    top: 2rem;
+    top: 5rem;
     padding: 0.5rem;
     cursor: pointer;
     @include easeOut;
@@ -13,7 +13,7 @@
       width: 3rem;
       height: 0.4rem;
       margin: 0 0 0.6rem 0;
-      background: $white;
+      background: $brand-darkBronze;
       @include easeOut;
     }
     // mobile btn X close
@@ -22,7 +22,7 @@
       transform: rotate(180deg);
       // animation: rotate180 1s ease-in-out;
       .menuBtn-line {
-        background: $brand-lightGold;
+        background: $brand-darkBronze;
         // rotate line 1
         &:nth-child(1) {
           transform: rotate(45deg) translate(0.6rem, 0.4rem);

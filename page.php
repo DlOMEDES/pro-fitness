@@ -1,10 +1,14 @@
-<?php
-  get_header(); ?>
-   <div class="page-banner">
+<?php 
+
+get_header();
+
+?>
+
+  <div class="page-banner">
       <div class="page-banner__bg-image" 
       ></div>
       <div class="page-banner__content container container--narrow">
-        <h1 class="page-banner__title"><?php echo the_title(); ?></h1>
+        <h1 class="page-banner__title">{Title}</h1>
         <div class="page-banner__intro">
           <p>Get started on one of our plans or packages</p>
         </div>
@@ -13,9 +17,6 @@
 
     <div class="container container--narrow page-section">
       <div class="generic-content">
-        <p>
-          <?php echo the_content(); ?>
-        </p>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia
           voluptates vero vel temporibus aliquid possimus, facere accusamus
@@ -28,6 +29,4 @@
       </div>
     </div>
 
-  <?php
-  get_footer();
-?>
+    <?php get_footer(); ?>

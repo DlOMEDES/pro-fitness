@@ -1,6 +1,21 @@
 <html lang="en">
   <head>
     <?php wp_head(); ?>
+    <meta charset=<?php bloginfo('charset'); ?> />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.11.2/css/all.css"
+    />
+    <!-- importing sass styles in app.js through parcel -->
+    <!-- <link rel="stylesheet" href="./styles/" /> -->
+    <title><?php bloginfo('name'); ?></title>
   </head>
   <body>
     <!-- top announcement notification bar -->
@@ -25,8 +40,10 @@
             <img src="<?php echo IMG_PATH;?>/spartan-fitness-logo.png" alt="" />
           </a>
         </div>
+        
         <div class="navMenu">
-          <a href="/" class="navMenu-link">pricing</a>
+        <!-- link pricin page -->
+          <a href="<?php echo site_url("/pricing") ?>" class="navMenu-link">pricing</a>
           <a href="/#location" class="navMenu-link">Location</a>
           <a href="/" class="navMenu-link">free pass</a>
         </div>

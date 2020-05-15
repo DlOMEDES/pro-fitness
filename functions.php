@@ -12,4 +12,16 @@
   if( !defined(IMG_PATH)){
     define( 'IMG_PATH', get_stylesheet_directory_uri() . '/dist/images' );
   }
+
+  //Function to add Meta Tags in Header without Plugin
+  // function add_meta_tags() {
+  //   echo '<meta name="viewport" content="width=device-width, initial-scale=1.0" />';
+  //   echo '<meta charset="UTF-8" />';
+
+  //   echo '<meta name="viewport" content="width=device-width, initial-scale=1.0" />';
+  //   echo '<meta http-equiv="X-UA-Compatible" content="ie=edge" />';
+    
+  // }
+  // add_action('wp_head', 'add_meta_tags');
+
 ?>
