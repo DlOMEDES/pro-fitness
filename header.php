@@ -43,9 +43,9 @@
         
         <div class="navMenu">
         <!-- link pricin page -->
-          <a href="<?php echo site_url("/pricing") ?>" class="navMenu-link">pricing</a>
-          <a href="/#location" class="navMenu-link">Location</a>
-          <a href="/" class="navMenu-link">free pass</a>
+          <a href="<?php echo site_url("/pricing") ?>" class="navMenu-link">About</a>
+          <a href="/#location" class="navMenu-link">Pricing</a>
+          <a href="/" class="navMenu-link">Free Pass</a>
         </div>
       </nav>
       <div class="menuBtn">

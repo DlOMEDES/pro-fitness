@@ -2,15 +2,16 @@
 
 get_header();
 
+
 ?>
 
   <div class="page-banner">
       <div class="page-banner__bg-image" 
       ></div>
       <div class="page-banner__content container container--narrow">
-        <h1 class="page-banner__title">{Title}</h1>
+        <h1 class="page-banner__title"><?php the_title(); ?></h1>
         <div class="page-banner__intro">
-          <p>Get started on one of our plans or packages</p>
+          <p>about us</p>
         </div>
       </div>
     </div>

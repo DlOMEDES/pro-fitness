@@ -215,7 +215,8 @@ body {
   padding: 5rem 0;
   width: 100%; }
   .mainQuote q {
-    width: 50%; }
+    width: 50%;
+    font-style: italic; }
 
 .sliderWrapper {
   overflow: hidden;
@@ -649,7 +650,8 @@ body {
   margin: 0; }
 
 .container--narrow {
-  max-width: 960px; }
+  max-width: 960px;
+  height: 30vh; }
 
 .page-section {
   padding: 3.5rem; }

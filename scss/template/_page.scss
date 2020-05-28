@@ -27,7 +27,7 @@
   bottom: 0;
   left: 0;
   right: 0;
-  background-image: url('../../dist/images/Athena.jpg');
+  background-image: url("../../dist/images/Athena.jpg");
 }
 
 .page-banner__intro {
@@ -49,6 +49,7 @@
 
 .container--narrow {
   max-width: 960px;
+  height: 30vh;
 }
 
 .page-section {

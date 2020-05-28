@@ -22,13 +22,27 @@
       <!-- a quote -->
       <div class="mainQuote">
         <div class="container">
-          <q class="text"
-            >Training gives us an outlet for suppressed energies created by
-            stress and thus tones the spirit just as exercise conditions the
-            body</q
-          >
-          <br />
-          <cite>Arnold Schwarzenegger</cite>
+        <?php 
+          $homepage_quotes = new WP_Query([
+            'post_type' => 'quote',
+            'posts_per_page' => 1,
+            'orderby'   => 'rand'
+          ]);
+
+          while($homepage_quotes->have_posts()) {
+            $homepage_quotes->the_post(); ?>
+            <?php echo wp_trim_words(get_the_content(), 30) ?>
+            <br>
+          <cite>– <?php the_field('quote_author'); ?></cite>
+            
+          <?php }
+
+// the loop alternative syntax
+// if ( have_posts() ) : while ( have_posts() ) : the_post(); 
+// <?php endwhile; endif; 
+        ?>
+          
+
         </div>
       </div>
       <!-- membership section -->
@@ -38,53 +52,22 @@
             <h1 class="membersHeading">what we offer</h1>
           </div>
           <div class="membersGrid">
-            <div class="membersGrid-training">
-              <h3 class="membersGrid-title">1-On-1 Personal Training</h3>
-              <p class="text">
-                All sessions are 1 hour and personalized to your individual
-                needs and interests. We offer coaching in powerlifting,
-                strongman, Olympic-style weightlifting, sport-specific
-                performance training, kettlebell training, and general fitness.
-                Available in single sessions, 3- and 6-pack sessions, or 3 times
-                per week.
-              </p>
-            </div>
-            <div class="membersGrid-Gym">
-              <h3 class="membersGrid-title">
-                Open Gym
-              </h3>
-              <p class="text">
-                equipped for powerlifting, strongman, Olympic-style
-                weightlifting, and functional fitness. Although you’re training
-                without a coach, you’re never training alone. Staff are always
-                available to spot or answer questions, and you’ll become part of
-                a community of competitive and recreational lifters who have fun
-                and keep each other motivated.
-              </p>
-            </div>
-            <div class="membersGrid-guidance">
-              <h3 class="membersGrid-title">Unrivaled Expertise</h3>
-              <p class="text">
-                Founder and operator, Phil Clark, has had over 30 years of
-                experience competing and training at the world-class level,
-                coaching top athletes, and writing about fitness. He works with
-                each staff-instructor to determine the best exercises to do (and
-                the exercises to avoid), the best order of those exercises, how
-                the client should be instructed to do those exercises, and what
-                to do when the client struggles to follow the instructions.
-              </p>
-            </div>
-            <div class="membersGrid-equipment">
-              <h3 class="membersGrid-title">STATE OF THE ART EQUIPMENT</h3>
-              <p class="text">
-                The Training Station is in a new facility that is meticulously
-                maintained, full of state of the art equipment and is run with
-                unparalleled passion by a staff that knows fitness. Owner Phil
-                Clark—running guru, Olympian trainer, 6ABC health consultant,
-                contributer to the Philadelphia Inquirer—built the gym to be the
-                ideal training facility.
-              </p>
-            </div>
+          <?php 
+            $homepage_service = new WP_Query([
+              'post_type' => 'service',
+              'posts_per_page' => 4,
+            ]);
+
+            while($homepage_service->have_posts()) {
+              $homepage_service->the_post(); ?>
+               <div class="membersGrid-training">
+                <h3 class="membersGrid-title"><?php the_title(); ?></h3>
+                <p class="text">
+                <?php the_content(); ?>
+                </p>
+              </div>
+            <?php } ?>
+           
           </div>
         </div>
       </section>
@@ -100,53 +83,25 @@
           <!-- staff images slider-->
           <div class="sliderWrapper">
             <div class="slider" id="slider">
-              <div class="slide slide-1">
-                <div class="slide-content">
-                  <span class="slide-text">a</span>
-                </div>
-              </div>
-
-              <div class="slide slide-2">
-                <div class="slide-content">
-                  <span class="slide-text">strong</span>
-                </div>
-              </div>
-
-              <div class="slide slide-3">
-                <div class="slide-content">
-                  <span class="slide-text">spirit</span>
-                </div>
-              </div>
-
-              <div class="slide slide-4">
-                <div class="slide-content">
-                  <span class="slide-text">needs</span>
-                </div>
-              </div>
-
-              <div class="slide slide-5">
-                <div class="slide-content">
-                  <span class="slide-text"><p>a</p></span>
-                </div>
-              </div>
-
-              <div class="slide slide-6">
-                <div class="slide-content">
-                  <span class="slide-text"><p>strong</p></span>
-                </div>
-              </div>
-
-              <div class="slide slide-7">
-                <div class="slide-content">
-                  <span class="slide-text"><p>powerful</p></span>
-                </div>
-              </div>
-
-              <div class="slide slide-8">
-                <div class="slide-content">
-                  <span class="slide-text"><p>body</p></span>
-                </div>
-              </div>
+              <!-- slide 1 -->
+              <?php  
+              // query from wp db
+                $slider = new WP_Query([
+                  'post_type' => 'slider'
+                ]);
+              
+              // loop over slides and images
+                while(have_posts()) {
+                  the_post(); ?>
+                   <div class="slide slide-1">
+                      <div class="slide-content">
+                        <span class="slide-text">a</span>
+                      </div>
+                    </div>
+                  <?php }
+                 ?>
+             
+              
             </div>
             <div class="arrow" id="arrowLeft"></div>
             <div class="arrow" id="arrowRight"></div>
