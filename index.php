@@ -89,6 +89,7 @@
                 $slider = new WP_Query([
                   'post_type' => 'slider',
                   'posts_per_page' => 8,
+                  
                 ]);
               
               // iterate images
@@ -98,11 +99,12 @@
                   $imageIndex +=1;
                   $slider->the_post(); ?>
                 
-                   <div class="slide slide-<?php echo $imageIndex; ?>">
-                      <div class="slide-content">
-                        <span class="slide-text">a</span>
-                      </div>
+                  <div class="slide">
+                    <div class="slide-content">
+                    <img src="<?php the_post_thumbnail(); ?>
+                      <span class="slide-text"><?php the_field('overlay_text'); ?></span>
                     </div>
+                  </div>
                 <?php }
                 ?>
              

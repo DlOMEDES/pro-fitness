@@ -255,24 +255,6 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   transition: transform 0.3s ease-in-out; }
-  .slide-1 {
-    background-image: url(../images/Athena.jpg); }
-  .slide-2 {
-    background-image: url("/images/Leo.jpg"); }
-  .slide-2 {
-    background-image: url("../images/Leo.jpg"); }
-  .slide-3 {
-    background-image: url(../images/Ellie.jpg); }
-  .slide-4 {
-    background-image: url(../images/Kai.jpg); }
-  .slide-5 {
-    background-image: url(../images/Emery.jpg); }
-  .slide-6 {
-    background-image: url(../images/Kolton.jpg); }
-  .slide-7 {
-    background-image: url(../images/Leah.jpg); }
-  .slide-8 {
-    background-image: url(../images/Ivan.jpg); }
   .slide-content {
     display: flex;
     flex-direction: column;

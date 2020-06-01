@@ -40,33 +40,37 @@
   background-repeat: no-repeat;
   transition: transform 0.3s ease-in-out;
   // update path
-  &-1 {
-    background-image: url(../images/Athena.jpg);
+  img {
+    // width: 100%;
+    // object-fit: cover;
   }
-  &-2 {
-    background-image: url("/images/Leo.jpg");
-  }
-  &-2 {
-    background-image: url("../images/Leo.jpg");
-  }
-  &-3 {
-    background-image: url(../images/Ellie.jpg);
-  }
-  &-4 {
-    background-image: url(../images/Kai.jpg);
-  }
-  &-5 {
-    background-image: url(../images/Emery.jpg);
-  }
-  &-6 {
-    background-image: url(../images/Kolton.jpg);
-  }
-  &-7 {
-    background-image: url(../images/Leah.jpg);
-  }
-  &-8 {
-    background-image: url(../images/Ivan.jpg);
-  }
+  // &-1 {
+  //   background-image: url('../images/Athena.jpg');
+  // }
+  // &-2 {
+  //   background-image: url("/images/Leo.jpg");
+  // }
+  // &-2 {
+  //   background-image: url("../images/Leo.jpg");
+  // }
+  // &-3 {
+  //   background-image: url('../images/Ellie.jpg');
+  // }
+  // &-4 {
+  //   background-image: url('../images/Kai.jpg');
+  // }
+  // &-5 {
+  //   background-image: url('../images/Emery.jpg');
+  // }
+  // &-6 {
+  //   background-image: url('../images/Kolton.jpg');
+  // }
+  // &-7 {
+  //   background-image: url('../images/Leah.jpg');
+  // }
+  // &-8 {
+  //   background-image: url('../images/Ivan.jpg');
+  // }
 
   &-content {
     display: flex;
