@@ -87,21 +87,25 @@
               <?php  
               // query from wp db
                 $slider = new WP_Query([
-                  'post_type' => 'slider'
+                  'post_type' => 'slider',
+                  'posts_per_page' => 8,
                 ]);
               
-              // loop over slides and images
-                while(have_posts()) {
-                  the_post(); ?>
-                   <div class="slide slide-1">
+              // iterate images
+              $imageIndex = 0;
+              // loop over slides and change the images
+                while($slider->have_posts()) {
+                  $imageIndex +=1;
+                  $slider->the_post(); ?>
+                
+                   <div class="slide slide-<?php echo $imageIndex; ?>">
                       <div class="slide-content">
                         <span class="slide-text">a</span>
                       </div>
                     </div>
-                  <?php }
-                 ?>
+                <?php }
+                ?>
              
-              
             </div>
             <div class="arrow" id="arrowLeft"></div>
             <div class="arrow" id="arrowRight"></div>

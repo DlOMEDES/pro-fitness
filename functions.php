@@ -9,6 +9,18 @@ function theme_files() {
 
 add_action( 'wp_enqueue_scripts', 'theme_files' );
 
+// theme supported features
+function theme_features() {
+  // adds top title for each page
+  add_theme_support('title-tag');
+  // adds featured images
+  add_theme_support('post-thumbnails');
+  add_post_type_support( 'slider', 'thumbnail' );
+}
+
+add_action('after_setup_theme', 'theme_features');
+
+
 // theme image path
 if( !defined(IMG_PATH)){
   define( 'IMG_PATH', get_stylesheet_directory_uri() . '/dist/images' );

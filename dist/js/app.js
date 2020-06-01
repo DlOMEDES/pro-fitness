@@ -64,6 +64,7 @@ prevImg = () => {
   resetImgs();
   slides[currentSlide - 1].style.display = "block";
   currentSlide--;
+  console.log(currentSlide);
 };
 
 // when right arrow is clicked
@@ -78,6 +79,7 @@ nextImg = () => {
   resetImgs();
   slides[currentSlide + 1].style.display = "block";
   currentSlide++;
+  console.log(currentSlide);
 };
 // call initialized slide
 initSlide();
