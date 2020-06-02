@@ -5,7 +5,7 @@
     - staff slider with featured images ✔️
     - cpt slider should show featured images ✔️
     - user can change the slider images ✔️
-    - users can change the tips section icon, boxes, text.
+    - users can change the tips section icon, boxes, text. ✔️
     - image grid, user can change images.
 3. pop up grid images on click.
 4. pages

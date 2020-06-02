@@ -106,6 +106,7 @@
                     </div>
                   </div>
                 <?php }
+                
                 ?>
              
             </div>
@@ -127,49 +128,32 @@
           </p>
         </div>
         <div class="tipBoxes">
-          <!-- box 1 -->
-          <div class="tipBoxes-1 box">
-            <div class="box-head">
-              <img src="<?php echo IMG_PATH;?>/handshakeHeart.png" alt="" />
-              <h2 class="box-heading">We’ve Got Your Back</h2>
-            </div>
-            <div class="box-details">
-              <p class="text">
-                Don’t worry if the movements are new to you! Our trainers are
-                credentialed and caring. They provide personalized attention and
-                movement modifications to ensure you're doing what's right for
-                your body without risk of injury.
-              </p>
-            </div>
-          </div>
-          <!-- box 2 -->
-          <div class="tipBoxes-2 box">
-            <div class="box-head">
-              <img src="<?php echo IMG_PATH;?>/shoes.png" alt="" />
-              <h2 class="box-heading">Come Prepared</h2>
-            </div>
-            <div class="box-details">
-              <p class="text">
-                Our combination of cardio machines, weights, and bodyweight
-                training, so be sure to wear sneakers and comfortable athletic
-                clothes. Don’t forget to hydrate! We have filling stations and
-                bottled water for purchase.
-              </p>
-            </div>
-          </div>
-          <!-- box 3 -->
-          <div class="tipBoxes-3 box">
-            <div class="box-head">
-              <img src="<?php echo IMG_PATH;?>/muscle.png" alt="" />
-              <h2 class="box-heading">Get Ready to Have Fun</h2>
-            </div>
-            <div class="box-details">
-              <p class="text">
-                Be sure to come with an open mind and a positive attitude. Get
-                ready to be challenged and have some fun along the way!
-              </p>
-            </div>
-          </div>
+          <?php 
+            $someTips = new WP_Query([
+              'post_type' => 'tips',
+              'posts_per_page' => 3,
+              'orderby' => 'post_date',
+              'order' => 'ASC'
+            ]);
+ 
+            while($someTips->have_posts()) {
+              $someTips->the_post(); 
+              ?>
+              <!-- box 1 -->
+              <div class="tipBoxes-1 box">
+                <div class="box-head">
+                  <img src="<?php the_field('tip_icon') ?>"/>
+                  <h2 class="box-heading"><?php the_title(); ?></h2>
+                </div>
+                <div class="box-details">
+                  <p class="text">
+                    <?php the_content(); ?>
+                  </p>
+                </div>
+              </div>
+             <?php }
+            ?>
+          
         </div>
       </section>
 
