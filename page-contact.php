@@ -1,3 +1,15 @@
+<?php get_header(); ?>
+<div class="page-banner">
+  <div class="page-banner__bg-image" style="background-image: url('<?php $bannerImage = get_field('page_banner_image'); echo $bannerImage['url'] ?>)"
+  ></div>
+  
+  <div class="page-banner__content container container--narrow">
+    <h1 class="page-banner__title"><?php the_title(); ?></h1>
+    <!-- <div class="page-banner__intro">
+      <p>about us</p>
+    </div> -->
+  </div>
+</div>
 
 <!-- image grid with location information -->
 <section id="location" class="location sections">
@@ -34,3 +46,6 @@
     </div>
 </div>
 </section>
+
+
+<?php get_footer(); ?>

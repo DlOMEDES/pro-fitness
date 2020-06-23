@@ -644,3 +644,6 @@ body {
   @media (max-width: 600px) {
     .featured-image {
       width: 320px; } }
+
+.page-banner__bg-image {
+  background-position: center; }

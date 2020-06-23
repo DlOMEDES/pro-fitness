@@ -31,9 +31,9 @@
     <header class="mainHeader">
       <nav class="nav">
         <div class="navMenu">
-          <a href="/" class="navMenu-link">Home</a>
+          <a href="<?php echo home_url();?>" class="navMenu-link">Home</a>
           <a href="/#members" class="navMenu-link">Membership</a>
-          <a href="<?php echo site_url('/trainers')?>" class="navMenu-link">Gallery</a>
+          <a href="<?php echo site_url('/gallery')?>" class="navMenu-link">Gallery</a>
         </div>
         <div class="navLogo">
           <a href="<?php echo home_url();?>">
@@ -45,7 +45,7 @@
         <!-- link pricin page -->
           <a href="<?php echo site_url("/about") ?>" class="navMenu-link">About</a>
           <a href="#" class="navMenu-link">Pricing</a>
-          <a href="#" class="navMenu-link">Contact</a>
+          <a href="/contact" class="navMenu-link">Contact</a>
         </div>
       </nav>
       <div class="menuBtn">
@@ -59,9 +59,9 @@
       <div class="menuMobile">
         <a href="/" class="menuMobile-link">Home</a>
         <a href="/#members" class="menuMobile-link">Membership</a>
-        <a href="/#staff" class="menuMobile-link">Gallery</a>
+        <a href="/gallery" class="menuMobile-link">Gallery</a>
         <a href="/about" class="menuMobile-link">About</a>
         <a href="#" class="menuMobile-link">Pricing</a>
-        <a href="#" class="menuMobile-link">Contact</a>
+        <a href="/contact" class="menuMobile-link">Contact</a>
       </div>
     </div>

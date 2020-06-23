@@ -1,12 +1,9 @@
 <?php get_header(); ?>
 
-<?php 
-  $bannerImage = get_field('page_banner_image');
-  while(have_posts()) : the_post(); 
-?>
+<?php while(have_posts()) : the_post(); ?>
 
 <div class="page-banner">
-  <div class="page-banner__bg-image" style="background-image: url('<?php echo IMG_PATH;?>/Athena.jpg")"
+  <div class="page-banner__bg-image" style="background-image: url(<?php $bannerImage = get_field('page_banner_image'); echo $bannerImage['url'] ?>)"
   ></div>
   
   <div class="page-banner__content container container--narrow">
